@@ -1,0 +1,50 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended"
+    ],
+    "lockFileMaintenance": {
+        "enabled": true
+    },
+    "separateMajorMinor": true,
+    "separateMinorPatch": false,
+    "separateMultipleMajor": true,
+    "separateMultipleMinor": false,
+    "cloneSubmodules": true,
+    "git-submodules": {
+        "enabled": true
+    },
+    "configMigration": true,
+    "configWarningReuseIssue": false,
+    "osvVulnerabilityAlerts": true,
+    "prHourlyLimit": 0,
+    "prConcurrentLimit": 0,
+    "timezone": "Asia/Shanghai",
+    "schedule": [
+        "* 2-8 * * *"
+    ],
+    "updateNotScheduled": false,
+    "assigneesFromCodeOwners": true,
+    "expandCodeOwnersGroups": true,
+    "filterUnavailableUsers": true,
+    "labels": [
+        "renovate:default"
+    ],
+    "vulnerabilityAlerts": {
+        "enabled": true,
+        "labels": [
+            "renovate:security"
+        ],
+        "vulnerabilityFixStrategy": "lowest",
+    },
+    "postUpdateOptions": [
+        "gomodMassage",
+        "gomodTidyE",
+        "gomodUpdateImportPaths",
+        "gomodVendor",
+        "helmUpdateSubChartArchives",
+        "npmDedupe",
+        "pnpmDedupe",
+        "yarnDedupeHighest"
+    ]
+}

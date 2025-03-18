@@ -1,0 +1,22 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "groupName": "{{manager}} dependencies (minor and patch only)",
+            "groupSlug": "{{manager}}",
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "pinDigest",
+                "digest"
+            ],
+            "labels": [
+                "renovate:{{manager}}"
+            ],
+            "matchPackageNames": [
+                "*"
+            ]
+        }
+    ]
+}
