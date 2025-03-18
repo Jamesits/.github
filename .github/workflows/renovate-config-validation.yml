@@ -4,9 +4,15 @@ on:
   push:
     branches:
       - master
+    paths:
+      - renovate.json
+      - renovate/**
   pull_request:
     branches:
       - master
+    paths:
+      - renovate.json
+      - renovate/**
 
 jobs:
   renovate-config-validation:
@@ -16,4 +22,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v4
-      - run: npx --yes --package renovate -- renovate-config-validator --strict
+      - run: npx --yes --package renovate -- renovate-config-validator --strict renovate.json renovate/*.json
