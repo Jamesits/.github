@@ -33,7 +33,7 @@
         "labels": [
             "renovate:security"
         ],
-        "vulnerabilityFixStrategy": "lowest",
+        "vulnerabilityFixStrategy": "lowest"
     },
     "postUpdateOptions": [
         "gomodMassage",
