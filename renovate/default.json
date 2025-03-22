@@ -39,7 +39,6 @@
         "gomodMassage",
         "gomodTidyE",
         "gomodUpdateImportPaths",
-        "gomodVendor",
         "helmUpdateSubChartArchives",
         "npmDedupe",
         "pnpmDedupe",
