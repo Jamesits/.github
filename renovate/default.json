@@ -43,5 +43,15 @@
         "npmDedupe",
         "pnpmDedupe",
         "yarnDedupeHighest"
+    ],
+    "customManagers": [
+        {
+            "customType": "regex",
+            "description": "Manually tagged packages",
+            "fileMatch": [".*"],
+            "matchStrings": [
+                "(?:#|\\\/\\\/) +renovate: +datasource=\"?(?<datasource>[a-z-]+?)\"?(?: +depName=\"?(?<depName>\\S+?)\"?)? +packageName=\"?(?<packageName>\\S+?)\"?(?: +versioning=\"?(?<versioning>[a-z-]+?)\"?)?[\\n\\r].*\\S*\\s*=\\s*[\"']?(?<currentValue>\\S+?)[\"']?\\s"
+            ]
+        }
     ]
 }
