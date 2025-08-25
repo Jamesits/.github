@@ -18,4 +18,9 @@ Project Status series:
 ```plaintext
 # renovate: datasource=xxx [depName=xxx] packageName=xxx/yyy [versioning=xxx]
 some_version = "1.2.3"
+
+# or
+
+# renovate: datasource=xxx [depName=xxx] packageName=xxx/yyy [versioning=xxx]
+"1.2.3"
 ```
