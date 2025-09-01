@@ -52,7 +52,7 @@
                 "/.*/"
             ],
             "matchStrings": [
-                "(?:#|\\/\\/) +renovate: +datasource=\"?(?<datasource>[a-z-]+?)\"?(?: +depName=\"?(?<depName>\\S+?)\"?)? +packageName=\"?(?<packageName>\\S+?)\"?(?: +versioning=\"?(?<versioning>[a-z-]+?)\"?)?[\\n\\r](?:.*\\S*\\s*=)?\\s*[\"']?(?<currentValue>[\\w.]+)[\"']?"
+                "(?:#|\\/\\/) +renovate: +datasource=\"?(?<datasource>[a-z-]+?)\"?(?: +depName=\"?(?<depName>\\S+?)\"?)? +packageName=\"?(?<packageName>\\S+?)\"?(?: +versioning=\"?(?<versioning>[a-z-]+?)\"?)?[\\n\\r](?:.*\\S*\\s*[=:])?\\s*[\"']?(?<currentValue>[\\w.]+)[\"']?"
             ]
         }
     ]
