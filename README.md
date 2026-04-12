@@ -3,6 +3,7 @@
 ## Badges
 
 ![Works - On My Machine](https://img.shields.io/badge/Works-On_My_Machine-2ea44f)
+![100% AI Code](https://img.shields.io/badge/AI_Code-100%25-blue)
 
 Project Status series:
 
